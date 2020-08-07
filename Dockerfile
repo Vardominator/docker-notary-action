@@ -12,4 +12,4 @@ COPY entrypoint.sh github.com/theupdateframework/notary/cmd/notary/entrypoint.sh
 
 WORKDIR /github.com/theupdateframework/notary/cmd/notary
 
-ENTRYPOINT [ "entrypoint.sh" ]
+ENTRYPOINT [ "/github.com/theupdateframework/notary/cmd/notary/entrypoint.sh" ]
