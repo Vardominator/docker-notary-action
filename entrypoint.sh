@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-/go/bin/notary
+notary --help

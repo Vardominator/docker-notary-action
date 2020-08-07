@@ -1,13 +1,7 @@
-FROM golang
+FROM ubuntu:18.04
 
-ENV GO111MODULE=auto
+RUN apt-get update -y
 
-RUN go get github.com/theupdateframework/notary
-
-RUN go install -tags pkcs11 github.com/theupdateframework/notary/cmd/notary
-
-COPY entrypoint.sh /entrypoint.sh
-
-WORKDIR /
+RUN apt-get install notary
 
 ENTRYPOINT [ "/entrypoint.sh" ]
