@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-notary
+/usr/local/bin/notary
