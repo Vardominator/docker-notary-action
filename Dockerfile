@@ -1,6 +1,6 @@
 FROM golang
 
-ENV GO111MODULE=on
+ENV GO111MODULE=auto
 
 RUN go get github.com/theupdateframework/notary
 
