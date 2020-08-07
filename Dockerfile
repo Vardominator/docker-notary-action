@@ -1,4 +1,4 @@
-FROM golang
+FROM golang:alpine
 
 ENV GO111MODULE=auto
 
